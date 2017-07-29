@@ -29,7 +29,7 @@
   }
 
   img {
-    padding: var(--spaceing);
+    padding: var(--spacing);
     background: var(--base);
     filter: blur(var(--blur));
   }
@@ -62,7 +62,7 @@
 
   function handleUpdate() {
   const suffix = this.dataset.sizing || '';
-  document.doucumentElement.stlye.setProperty(`--${this.name}`, this.value + suffix);
+  document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
   }
 
   inputs.forEach(input => input.addEventListener('change', handleUpdate));
